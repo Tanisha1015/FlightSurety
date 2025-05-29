@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>FlightSurety</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="#">FlightSurety dApp</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </nav>
+
+    <main class="container">
+        <h1>First class insurance is our first policy!</h1>
+        <div id="display-wrapper" class="top-20">
+        </div>
+        <div class="row top-20">
+            <label>
+                Flights <select id="flights-selector">
+                </select>
+            </label>
+            
+        </div>
+        
+        <div class="row top-20">
+            <label class="form">Enter Flight #:</label> <input type="text" id="flight-number"> 
+            <btn class="btn btn-primary" id="register-flight">Register Your Flight</btn>
+            </div>
+            <!-- <label class="form">Pick Here</label> <input type="text" id="flight-number"> --> 
+            <div id="display wrapper" class="top-20">
+            </div>
+            <hr />
+            <hr />
+            <div class="row top-20">
+                <label class="form">Get Flight Status:</label>
+                <btn class="btn btn-primary" id="submit-oracle">Retrieve the Oracle Status</btn>
+            </div>
+            
+            <div class="row top-20">
+                <label class="form">Buy insurance:</label>
+                <input type="text" id="insurance-value" style="margin:0; width: 100px" value="0.5">&nbsp;&nbsp;ETH
+                <!-- &nbsp; = nonbreaking space: https://www.w3schools.com/html/html_entities.asp -->
+                &nbsp;
+                &nbsp;
+                <btn class="btn btn-primary" id="buy-insurance">Buy</btn>
+            </div>
+            <div class="row top-20">
+                <label class="form">Withdraw (only if the flight is late)</label>
+                <btn class="btn btn-primary" id="withdraw-credits">Withdraw</btn>
+            </div>
+            <div id="results-wrapper" class="top-20">
+            </div>
+            <div class="row top-20">
+
+            </div>
+            <!-- <btn class="btn btn-primary" id="submit-oracle">Submit to Oracles</btn>
+            <div style="flex: 1;">
+                <label style="display: flex; flex-direction: column">
+                Amount (in ETH)
+                <input style="margin-left: 7px" id="valueStep" type="number" min="0" max="1" step="0.1">
+            </label>
+            <button style="margin-left: 7px" class="btn btn-primary" id="buyInsurance">Buy Insurance (and win big!)</button>    
+            </div>
+            <div style="display: none;">
+            <label class="form">Flight</label>l<input type="text" id="flight-number">
+            </div> -->
+    </main>
+
+<script type="text/javascript" src="bundle.js"></script></body>
+
+</html>
